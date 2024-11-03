@@ -2,6 +2,7 @@ import { createContext, useState } from 'react'
 import Button from '@mui/material/Button';
 import { TextField, Typography } from '@mui/material';
 import ChildC from './components/ChildC';
+import RefDemo from './components/RefDemo';
 
 const addFunctionality = createContext<any>('');
 function App() {
@@ -15,10 +16,11 @@ function App() {
   }
 
   return (
+    <RefDemo/>
+    // <addFunctionality.Provider value={{ count, incCont }}>
+    //   <ChildC />
 
-    <addFunctionality.Provider value={{ count, incCont }}>
-      <ChildC />
-    </addFunctionality.Provider>
+    // </addFunctionality.Provider>
 
 
   )
