@@ -3,7 +3,8 @@ import Button from '@mui/material/Button';
 import { TextField, Typography } from '@mui/material';
 import ChildC from './components/ChildC';
 import RefDemo from './components/RefDemo';
-import FormData from './components/FormData';
+// import FormData from './components/FormData';
+import TestComponent from './components/TestComponent';
 
 const addFunctionality = createContext<any>('');
 function App() {
@@ -18,7 +19,7 @@ function App() {
 
   return (
     // <RefDemo/>
-    <FormData/>
+    <TestComponent/>
     // <addFunctionality.Provider value={{ count, incCont }}>
     //   <ChildC />
 
