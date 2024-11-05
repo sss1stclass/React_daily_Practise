@@ -1,4 +1,3 @@
-import { Box, TextField, Typography } from '@mui/material';
 import { useState } from 'react';
 const TemperatureInput = ({ temperature, onTemperatureChange }:any)=> {
     return (
