@@ -4,6 +4,7 @@ import { createContext, useState } from 'react'
 // import ChildC from './components/ChildC';
 // import RefDemo from './components/RefDemo';
 // import FormData from './components/FormData';
+import { React1CheckBox } from './components/React1CheckBox';
 import TestComponent from './components/TestComponent';
 
 const addFunctionality = createContext<any>('');
@@ -19,7 +20,8 @@ function App() {
 
   return (
     // <RefDemo/>
-    <TestComponent/>
+    // <TestComponent/>
+    <React1CheckBox/>
     // <addFunctionality.Provider value={{ count, incCont }}>
     //   <ChildC />
 
