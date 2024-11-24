@@ -1,5 +1,5 @@
-import { Button, Checkbox, FormControl, FormControlLabel, FormGroup, Typography } from '@mui/material'
-import React, { useState } from 'react'
+import { Button, Checkbox, FormControlLabel, FormGroup, Typography } from '@mui/material'
+import { useState } from 'react'
 
 export const React1CheckBox = () => {
     const [selectaAll, setSelectAll] = useState<any>({
@@ -10,11 +10,11 @@ export const React1CheckBox = () => {
     });
 
     const handleChange = () => {
-        const checkedState = Object.keys(selectaAll).reduce((acc:any,key:any)=>{
+        const checkedState = Object.keys(selectaAll).reduce((acc: any, key: any) => {
             console.log(acc, key)
-                acc[key] = true;
-                return acc;
-        },{})
+            acc[key] = true;
+            return acc;
+        }, {})
         setSelectAll(checkedState);
 
     }
