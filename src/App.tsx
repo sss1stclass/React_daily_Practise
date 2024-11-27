@@ -21,7 +21,7 @@ function App() {
   return (
     // <RefDemo/>
     // <TestComponent/>
-    <React1CheckBox/>
+    <React1CheckBox />
     // <addFunctionality.Provider value={{ count, incCont }}>
     //   <ChildC />
 
@@ -32,4 +32,4 @@ function App() {
 }
 
 export default App;
-export {addFunctionality};
+export { addFunctionality };
