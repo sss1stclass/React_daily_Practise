@@ -1,9 +1,11 @@
 import React from 'react'
 
-const day1 = () => {
+const Day1 = () => {
   return (
-    <div>day1</div>
+    <h1 className="text-8xl font-bold bg-red-100">
+    Hello world!
+  </h1>
   )
 }
 
-export default day1
+export default Day1;
