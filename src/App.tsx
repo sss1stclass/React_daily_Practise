@@ -22,6 +22,7 @@ function App() {
 
   return (
     <Box p={1}>
+
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography variant='body1'>Day-1</Typography>
         <Day1 />
