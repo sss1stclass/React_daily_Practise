@@ -6,7 +6,8 @@ import { createContext, useState } from 'react'
 // import FormData from './components/FormData';
 import { React1CheckBox } from './components/React1CheckBox';
 import TestComponent from './components/TestComponent';
-import Day1 from './components/day1';
+import Day1 from './components/Day1';
+import { Box, Typography } from '@mui/material';
 
 const addFunctionality = createContext<any>('');
 function App() {
@@ -20,7 +21,18 @@ function App() {
   }
 
   return (
-        <Day1/>
+    <Box p={1}>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography variant='body1'>Day-1</Typography>
+        <Day1 />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography variant='body1'>Day-2</Typography>
+        <React1CheckBox />
+      </Box>
+    </Box>
+
+
     // <addFunctionality.Provider value={{ count, incCont }}>
     //   <ChildC />
 
