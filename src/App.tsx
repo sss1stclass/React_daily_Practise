@@ -5,6 +5,7 @@ import { createContext, useState } from 'react'
 // import RefDemo from './components/RefDemo';
 // import FormData from './components/FormData';
 import { React1CheckBox } from './components/React1CheckBox';
+import Day3_ControlledForm from './components/Day3_ControlledForm';
 import TestComponent from './components/TestComponent';
 import Day2_Prop from './components/Day2_Prop';
 import Day1 from './components/Day1';
@@ -31,15 +32,19 @@ function App() {
     <Box p={1}>
 
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography variant='body1'>Day-1</Typography>
+        <Typography mb={1} variant='body1'>Day-1 (Q.3  Create a functional component that displays a button. When clicked, it increments a counter.)</Typography>
         <Day1 />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography variant='body1'>Day-2</Typography>
+        <Typography mb={1} variant='body1'>Day-2 (Q.3  Write a React component that receives a name prop and displays "Hello, [propPassed data]")</Typography>
         <Day2_Prop  details= {obj}/>
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography variant='body1'>Day-3</Typography>
+        <Typography mb={1} variant='body1'>Day-3 (Q.3 Create a form with controlled inputs: name and email. Display the values when the form is submitted)</Typography>
+        <Day3_ControlledForm />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-3  (Q.3  React question for selecting all the checkbox with one button)</Typography>
         <React1CheckBox />
       </Box>
     </Box>

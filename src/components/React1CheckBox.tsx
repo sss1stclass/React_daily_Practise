@@ -30,9 +30,6 @@ export const React1CheckBox = () => {
     return (
         <>
             <Box p={2}>
-                <Typography variant='h4'>
-                    React question for selecting all the checkbox with one button
-                </Typography>
                 <FormGroup>
                     <FormControlLabel control={<Checkbox name='checkbox1' checked={selectaAll.checkbox1} onChange={handleEach} />} label="checkbox1" />
                     <FormControlLabel control={<Checkbox name='checkbox2' checked={selectaAll.checkbox2} onChange={handleEach} />} label="checkbox2" />
