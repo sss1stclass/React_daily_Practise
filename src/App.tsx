@@ -44,7 +44,7 @@ function App() {
         <Day3_ControlledForm />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-3  (Q.3  React question for selecting all the checkbox with one button)</Typography>
+        <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
         <React1CheckBox />
       </Box>
     </Box>
