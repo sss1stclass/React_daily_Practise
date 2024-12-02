@@ -1,6 +1,5 @@
-import { Password } from '@mui/icons-material';
 import { Box, Button, TextField } from '@mui/material';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Day3_ControlledForm = () => {
   const [data, setData] = useState({

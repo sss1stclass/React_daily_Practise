@@ -6,9 +6,10 @@ import { createContext, useState } from 'react'
 // import FormData from './components/FormData';
 import { React1CheckBox } from './components/React1CheckBox';
 import Day3_ControlledForm from './components/Day3_ControlledForm';
-import TestComponent from './components/TestComponent';
+// import TestComponent from './components/TestComponent';
 import Day2_Prop from './components/Day2_Prop';
 import Day1 from './components/Day1';
+import Day4_TogglePara from './components/Day4_TogglePara';
 import { Box, Typography } from '@mui/material';
 
 const obj = {
@@ -42,6 +43,10 @@ function App() {
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-3 (Q.3 Create a form with controlled inputs: name and email. Display the values when the form is submitted)</Typography>
         <Day3_ControlledForm />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-  (Q.  Write a component that toggles the visibility of a paragraph when a button is clicked)</Typography>
+        <Day4_TogglePara />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
