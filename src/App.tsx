@@ -10,6 +10,7 @@ import Day3_ControlledForm from './components/Day3_ControlledForm';
 import Day2_Prop from './components/Day2_Prop';
 import Day1 from './components/Day1';
 import Day4_TogglePara from './components/Day4_TogglePara';
+import Day5_RandomColorChange from './components/Day5_RandomColorChange';
 import { Box, Typography } from '@mui/material';
 
 const obj = {
@@ -45,8 +46,12 @@ function App() {
         <Day3_ControlledForm />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-  (Q.  Write a component that toggles the visibility of a paragraph when a button is clicked)</Typography>
+        <Typography mb={1} variant='body1'>Day-  (Q.4  Write a component that toggles the visibility of a paragraph when a button is clicked)</Typography>
         <Day4_TogglePara />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-  (Q.5  Create a React component that changes its background color when a button is clicked)</Typography>
+        <Day5_RandomColorChange />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
