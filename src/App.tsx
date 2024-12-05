@@ -47,15 +47,15 @@ function App() {
         <Day3_ControlledForm />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-  (Q.4  Write a component that toggles the visibility of a paragraph when a button is clicked)</Typography>
+        <Typography mb={1} variant='body1'>Day-4  (Q.4  Write a component that toggles the visibility of a paragraph when a button is clicked)</Typography>
         <Day4_TogglePara />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-  (Q.5  Create a React component that changes its background color when a button is clicked)</Typography>
+        <Typography mb={1} variant='body1'>Day-5  (Q.5  Create a React component that changes its background color when a button is clicked)</Typography>
         <Day5_RandomColorChange />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-  (Q.  Create a component that fetches and displays a list of users from a public API)</Typography>
+        <Typography mb={1} variant='body1'>Day-6  (Q.  Create a component that fetches and displays a list of users from a public API)</Typography>
         <Day6_FetchApi />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
