@@ -1,4 +1,4 @@
-import { Box, Button, Checkbox, FormControlLabel, FormGroup, Typography } from '@mui/material'
+import { Box, Button, Checkbox, FormControlLabel, FormGroup} from '@mui/material'
 import { useState } from 'react'
 
 export const React1CheckBox = () => {

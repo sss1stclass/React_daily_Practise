@@ -1,4 +1,3 @@
-import React from 'react'
 import ChildA from './ChildA'
 
 const ChildB = () => {

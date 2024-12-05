@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { createContext } from 'react'
 // import Button from '@mui/material/Button';
 // import { TextField, Typography } from '@mui/material';
 // import ChildC from './components/ChildC';
@@ -23,13 +23,13 @@ const obj = {
 const addFunctionality = createContext<any>('');
 function App() {
 
-  const [count, setCount] = useState('Hello')
+  // const [count, setCount] = useState('Hello')
 
 
-  const incCont = (event: any) => {
-    event.preventDefault();
-    setCount(event.target.value);
-  }
+  // const incCont = (event: any) => {
+  //   event.preventDefault();
+  //   setCount(event.target.value);
+  // }
 
   return (
     <Box p={1}>
