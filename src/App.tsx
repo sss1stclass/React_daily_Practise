@@ -8,11 +8,11 @@ import { React1CheckBox } from './components/React1CheckBox';
 import Day3_ControlledForm from './components/Day3_ControlledForm';
 // import TestComponent from './components/TestComponent';
 import Day2_Prop from './components/Day2_Prop';
-import Day1 from './components/Day1';
 import Day4_TogglePara from './components/Day4_TogglePara';
 import Day5_RandomColorChange from './components/Day5_RandomColorChange';
 import { Box, Typography } from '@mui/material';
 import Day6_FetchApi from './components/Day6_FetchApi';
+import Day1 from './components/Day1';
 
 const obj = {
   name:'PuzzledBird',
