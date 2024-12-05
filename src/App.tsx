@@ -12,7 +12,7 @@ import Day4_TogglePara from './components/Day4_TogglePara';
 import Day5_RandomColorChange from './components/Day5_RandomColorChange';
 import { Box, Typography } from '@mui/material';
 import Day6_FetchApi from './components/Day6_FetchApi';
-import Day1 from './components/Day1';
+import Day1_CounterApp from './components/Day1_CounterApp';
 
 const obj = {
   name:'PuzzledBird',
@@ -36,7 +36,7 @@ function App() {
 
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-1 (Q.3  Create a functional component that displays a button. When clicked, it increments a counter.)</Typography>
-        <Day1 />
+        <Day1_CounterApp />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-2 (Q.3  Write a React component that receives a name prop and displays "Hello, [propPassed data]")</Typography>

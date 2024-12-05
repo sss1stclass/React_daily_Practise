@@ -4,7 +4,7 @@ import { useState } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 
-const Day1 = () => {
+const Day1_CounterApp = () => {
     const [counter, setCounter] = useState(0);
     const handleClickInc = () => {
         setCounter(counter + 1);
@@ -39,4 +39,4 @@ const Day1 = () => {
     )
 }
 
-export default Day1;
+export default Day1_CounterApp;
