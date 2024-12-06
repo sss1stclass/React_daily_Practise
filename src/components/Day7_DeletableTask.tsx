@@ -36,21 +36,29 @@ const Day7_DeletableTask = () => {
         setData(filterData);
     }
 
+    const addTask = () => {
+        const newTask = { name: `Task${data.length + 1}`, id: Math.random() };
+        setData([...data, newTask]);
+    }
+
     return (
         <Box display='flex' flexDirection='column' alignItems='center' justifyContent='center' p={3}>
 
-            <Box display='flex' alignItems='center' justifyContent='space-between'>
+            <Box display='flex' alignItems='center' justifyContent='space-between' flexWrap='wrap' mb={2}>
                 {
                     data.map((item: any) => {
                         return (
-                            <Paper key={item.id} elevation={4} sx={{ width: 'auto', padding: 3, marginRight: 2 }}>
+                            <Paper key={item.id} elevation={4} sx={{ width: 'auto', padding: 3, marginRight: 2, marginBottom: 2 }}>
                                 <Typography mb={2} sx={{ textAlign: 'center' }}>{item.name}</Typography>
-                                <Button onClick={() => handleDelete(item.id)} variant="contained" color='primary' endIcon={<DeleteIcon />}> Delete</Button>
+                                <Button onClick={() => handleDelete(item.id)} variant="contained" color='error' endIcon={<DeleteIcon />}> Delete</Button>
                             </Paper>
                         )
                     })
                 }
             </Box>
+            <Button onClick={addTask} variant="contained" color="success">
+                Add Task
+            </Button>
         </Box>
     )
 }
