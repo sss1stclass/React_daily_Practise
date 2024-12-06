@@ -37,7 +37,7 @@ const Day7_DeletableTask = () => {
     }
 
     const addTask = () => {
-        const newTask = { name: `Task${data.length + 1}`, id: Math.random() };
+        const newTask = { name: `Task${Math.floor(Math.random() * 100)}`, id: Math.floor(Math.random() * 100) };
         setData([...data, newTask]);
     }
 
