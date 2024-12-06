@@ -13,7 +13,7 @@ import Day5_RandomColorChange from './components/Day5_RandomColorChange';
 import { Box, Typography } from '@mui/material';
 import Day6_FetchApi from './components/Day6_FetchApi';
 import Day1_CounterApp from './components/Day1_CounterApp';
-import Day7_DeletableTask from './components/day7_DeletableTask';
+import Day7_DeletableTask from './components/Day7_DeletableTask';
 
 const obj = {
   name:'PuzzledBird',
