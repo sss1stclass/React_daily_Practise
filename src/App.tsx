@@ -13,6 +13,7 @@ import Day5_RandomColorChange from './components/Day5_RandomColorChange';
 import { Box, Typography } from '@mui/material';
 import Day6_FetchApi from './components/Day6_FetchApi';
 import Day1_CounterApp from './components/Day1_CounterApp';
+import Day7_DeletableTask from './components/day7_DeletableTask';
 
 const obj = {
   name:'PuzzledBird',
@@ -57,6 +58,10 @@ function App() {
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-6  (Q.  Create a component that fetches and displays a list of users from a public API)</Typography>
         <Day6_FetchApi />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-7  (Q.  Create a component that renders a dynamic list of items. Each item should have a delete button to remove it from the list.)</Typography>
+        <Day7_DeletableTask />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
