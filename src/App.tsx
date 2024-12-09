@@ -14,6 +14,7 @@ import { Box, Typography } from '@mui/material';
 import Day6_FetchApi from './components/Day6_FetchApi';
 import Day1_CounterApp from './components/Day1_CounterApp';
 import Day7_DeletableTask from './components/Day7_DeletableTask';
+import Day8_AutoComplete from './components/Day8_AutoComplete';
 
 const obj = {
   name:'PuzzledBird',
@@ -62,6 +63,10 @@ function App() {
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-7  (Q.  Create a component that renders a dynamic list of items. Each item should have a delete button to remove it from the list.)</Typography>
         <Day7_DeletableTask />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-8  (Q.  Implement a search bar that filters and displays a list of items based on user input.)</Typography>
+        <Day8_AutoComplete />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
