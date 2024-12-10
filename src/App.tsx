@@ -15,6 +15,7 @@ import Day6_FetchApi from './components/Day6_FetchApi';
 import Day1_CounterApp from './components/Day1_CounterApp';
 import Day7_DeletableTask from './components/Day7_DeletableTask';
 import Day8_AutoComplete from './components/Day8_AutoComplete';
+import Day9AdvPagination from './components/Day9AdvPagination';
 
 const obj = {
   name:'PuzzledBird',
@@ -67,6 +68,10 @@ function App() {
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-8  (Q.  Implement a search bar that filters and displays a list of items based on user input.)</Typography>
         <Day8_AutoComplete />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-9  (Q. Write a React component that implements pagination for a list of items.)</Typography>
+        <Day9AdvPagination />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
