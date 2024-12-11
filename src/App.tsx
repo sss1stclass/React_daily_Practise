@@ -38,23 +38,23 @@ function App() {
     <Box p={1}>
 
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-1 (Q.3  Create a functional component that displays a button. When clicked, it increments a counter.)</Typography>
+        <Typography mb={1} variant='body1'>Day-1 (Q  Implement a custom hook that manages a counter and persists its value in localStorage)</Typography>
         <Day1_CounterApp />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-2 (Q.3  Write a React component that receives a name prop and displays "Hello, [propPassed data]")</Typography>
+        <Typography mb={1} variant='body1'>Day-2 (Q  Write a React component that receives a name prop and displays "Hello, [propPassed data]")</Typography>
         <Day2_Prop  details= {obj}/>
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-3 (Q.3 Create a form with controlled inputs: name and email. Display the values when the form is submitted)</Typography>
+        <Typography mb={1} variant='body1'>Day-3 (Q Create a form with controlled inputs: name and email. Display the values when the form is submitted)</Typography>
         <Day3_ControlledForm />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-4  (Q.4  Write a component that toggles the visibility of a paragraph when a button is clicked)</Typography>
+        <Typography mb={1} variant='body1'>Day-4  (Q  Write a component that toggles the visibility of a paragraph when a button is clicked)</Typography>
         <Day4_TogglePara />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-5  (Q.5  Create a React component that changes its background color when a button is clicked)</Typography>
+        <Typography mb={1} variant='body1'>Day-5  (Q  Create a React component that changes its background color when a button is clicked)</Typography>
         <Day5_RandomColorChange />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
