@@ -3,7 +3,6 @@ import ChildC from './components/ChildC';
 // import FormData from './components/FormData';
 import { React1CheckBox } from './components/React1CheckBox';
 import Day3_ControlledForm from './components/Day3_ControlledForm';
-// import TestComponent from './components/TestComponent';
 import Day2_Prop from './components/Day2_Prop';
 import Day4_TogglePara from './components/Day4_TogglePara';
 import Day5_RandomColorChange from './components/Day5_RandomColorChange';
