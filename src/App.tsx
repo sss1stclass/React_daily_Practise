@@ -1,7 +1,5 @@
-import { createContext } from 'react'
-// import Button from '@mui/material/Button';
-// import { TextField, Typography } from '@mui/material';
-// import ChildC from './components/ChildC';
+import { createContext, useState } from 'react'
+import ChildC from './components/ChildC';
 // import RefDemo from './components/RefDemo';
 // import FormData from './components/FormData';
 import { React1CheckBox } from './components/React1CheckBox';
@@ -18,21 +16,25 @@ import Day8_AutoComplete from './components/Day8_AutoComplete';
 import Day9AdvPagination from './components/Day9AdvPagination';
 
 const obj = {
-  name:'PuzzledBird',
-  Profession:'Frontend Developer',
-  Experience:'2+Years'
+  name: 'PuzzledBird',
+  Profession: 'Frontend Developer',
+  Experience: '2+Years'
+}
+
+const ThemeProvideer = {
+  backgroundColor: 'black',
+  color: 'white'
 }
 
 const addFunctionality = createContext<any>('');
 function App() {
 
-  // const [count, setCount] = useState('Hello')
+  const [toggleTheme, setToggleTheme] = useState<any>(false);
 
+  const handleClick = () => {
+    setToggleTheme((prev: boolean) => !prev);
+  }
 
-  // const incCont = (event: any) => {
-  //   event.preventDefault();
-  //   setCount(event.target.value);
-  // }
 
   return (
     <Box p={1}>
@@ -43,7 +45,7 @@ function App() {
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-2 (Q  Write a React component that receives a name prop and displays "Hello, [propPassed data]")</Typography>
-        <Day2_Prop  details= {obj}/>
+        <Day2_Prop details={obj} />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-3 (Q Create a form with controlled inputs: name and email. Display the values when the form is submitted)</Typography>
@@ -74,18 +76,16 @@ function App() {
         <Day9AdvPagination />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-  (Q.  Create a Component that Uses the Context API to Provide a Theme (Light/Dark) to Child Components)</Typography>
+        <addFunctionality.Provider value={{ ThemeProvideer, toggleTheme, handleClick }}>
+          <ChildC />
+        </addFunctionality.Provider>
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
         <React1CheckBox />
       </Box>
     </Box>
-
-
-    // <addFunctionality.Provider value={{ count, incCont }}>
-    //   <ChildC />
-
-    // </addFunctionality.Provider>
-
-
   )
 }
 
