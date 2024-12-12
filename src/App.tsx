@@ -1,4 +1,3 @@
-import { createContext, useState } from 'react'
 import ChildC from './components/ChildC';
 // import RefDemo from './components/RefDemo';
 // import FormData from './components/FormData';
@@ -21,20 +20,7 @@ const obj = {
   Experience: '2+Years'
 }
 
-const ThemeProvideer = {
-  backgroundColor: 'black',
-  color: 'white'
-}
-
-const addFunctionality = createContext<any>('');
 function App() {
-
-  const [toggleTheme, setToggleTheme] = useState<any>(false);
-
-  const handleClick = () => {
-    setToggleTheme((prev: boolean) => !prev);
-  }
-
 
   return (
     <Box p={1}>
@@ -77,9 +63,7 @@ function App() {
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  Create a Component that Uses the Context API to Provide a Theme (Light/Dark) to Child Components)</Typography>
-        <addFunctionality.Provider value={{ ThemeProvideer, toggleTheme, handleClick }}>
           <ChildC />
-        </addFunctionality.Provider>
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
@@ -90,4 +74,3 @@ function App() {
 }
 
 export default App;
-export { addFunctionality };

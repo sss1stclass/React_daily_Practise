@@ -1,15 +1,10 @@
 import { Box, Button, Typography } from '@mui/material'
-import { useContext } from 'react'
-import { addFunctionality } from '../App'
+import { useContext } from 'react';
+import { ThemeContext } from './context/ThemeContext';
 
 const ChildA = () => {
-  const { ThemeProvideer, toggleTheme, handleClick } = useContext(addFunctionality);
-  const lightTheme = {
-    backgroundColor: 'white',
-    color: 'black',
-  };
+  const { themeStyles, toggleTheme, handleClick } = useContext(ThemeContext);
 
-  const themeStyles = toggleTheme ? ThemeProvideer : lightTheme;
 
   return (
     <>
