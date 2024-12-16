@@ -13,6 +13,7 @@ import Day7_DeletableTask from './components/Day7_DeletableTask';
 import Day8_AutoComplete from './components/Day8_AutoComplete';
 import Day9AdvPagination from './components/Day9AdvPagination';
 import Day10DropDown from './components/Day10DropDown';
+import Day11InfinteScrolling from './components/Day11InfinteScrolling';
 
 const obj = {
   name: 'PuzzledBird',
@@ -63,11 +64,16 @@ function App() {
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-10  (Q.  Create a Component that Uses the Context API to Provide a Theme (Light/Dark) to Child Components)</Typography>
-          <ChildC />
+        <ChildC />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-11  (Q.  Implement a Simple Dropdown Component)</Typography>
         <Day10DropDown />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-11  (Q.  Implement an Infinite Scrolling Component with API Data Fetching
+          )</Typography>
+        <Day11InfinteScrolling />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
