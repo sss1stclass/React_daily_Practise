@@ -14,6 +14,7 @@ import Day8_AutoComplete from './components/Day8_AutoComplete';
 import Day9AdvPagination from './components/Day9AdvPagination';
 import Day10DropDown from './components/Day10DropDown';
 import Day11InfinteScrolling from './components/Day11InfinteScrolling';
+import { InfiniteApiProvider } from './components/context/InfiniteApiContext';
 
 const obj = {
   name: 'PuzzledBird',
@@ -71,9 +72,10 @@ function App() {
         <Day10DropDown />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
-        <Typography mb={1} variant='body1'>Day-11  (Q.  Implement an Infinite Scrolling Component with API Data Fetching
-          )</Typography>
-        <Day11InfinteScrolling />
+        <Typography mb={1} variant='body1'>Day-11  (Q.  Implement an Infinite Scrolling Component with API Data Fetching.)</Typography>
+        <InfiniteApiProvider>
+          <Day11InfinteScrolling />
+        </InfiniteApiProvider>
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
