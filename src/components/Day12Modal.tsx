@@ -1,5 +1,5 @@
 import { Box, Button, Paper, Typography } from '@mui/material'
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 const Day12Modal = () => {
     const [show, setShow] = useState(false);
