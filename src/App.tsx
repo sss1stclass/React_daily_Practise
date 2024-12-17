@@ -14,6 +14,7 @@ import Day8_AutoComplete from './components/Day8_AutoComplete';
 import Day9AdvPagination from './components/Day9AdvPagination';
 import Day10DropDown from './components/Day10DropDown';
 import Day11InfinteScrolling from './components/Day11InfinteScrolling';
+import Day12Modal from './components/Day12Modal';
 import { InfiniteApiProvider } from './components/context/InfiniteApiContext';
 
 const obj = {
@@ -76,6 +77,10 @@ function App() {
         <InfiniteApiProvider>
           <Day11InfinteScrolling />
         </InfiniteApiProvider>
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-12  (Q.  Build a Modal Component that Opens and Closes When a Button is Clicked, and Also Supports External Closing via Clicks Outside.)</Typography>
+        <Day12Modal />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
