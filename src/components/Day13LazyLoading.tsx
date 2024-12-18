@@ -1,12 +1,14 @@
 import { Box, Card, CardActionArea, CardContent, CircularProgress, Typography } from '@mui/material';
-import  { useState } from 'react';
+import { useState } from 'react';
 import asset from '../assets/react2.jpg';
 
 const Day13LazyLoading = () => {
-    const [loading, setLoading] = useState(true); 
+    const [loading, setLoading] = useState(true);
 
     const handleImageLoad = () => {
-        setLoading(false); 
+        setTimeout(() => {
+            setLoading(false);
+        }, 2000)
     };
 
     return (
@@ -22,12 +24,13 @@ const Day13LazyLoading = () => {
                         src={asset}
                         alt="React Logo"
                         style={{
-                            display: loading ? 'none' : 'block', 
+                            display: loading ? 'none' : 'block',
                             width: '100%',
                             height: '100%',
                         }}
-                        onLoad={handleImageLoad} 
+                        onLoad={handleImageLoad}
                     />
+                   {/* <CardMedia component="iframe" src='https://www.youtube.com/watch?v=MG-Ac4TAvTY' allow="autoPlay"/> */}
                     <CardContent>
                         <Typography variant="h5" component="div">
                             React
