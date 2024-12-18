@@ -6,9 +6,7 @@ const Day13LazyLoading = () => {
     const [loading, setLoading] = useState(true);
 
     const handleImageLoad = () => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 2000)
+        setLoading(false);
     };
 
     return (
