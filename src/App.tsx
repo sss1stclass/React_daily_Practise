@@ -16,12 +16,17 @@ import Day10DropDown from './components/Day10DropDown';
 import Day11InfinteScrolling from './components/Day11InfinteScrolling';
 import Day12Modal from './components/Day12Modal';
 import { InfiniteApiProvider } from './components/context/InfiniteApiContext';
+import Day13LazyLoading from './components/Day13LazyLoading';
+// import { lazy, Suspense } from 'react';
+
 
 const obj = {
   name: 'PuzzledBird',
   Profession: 'Frontend Developer',
   Experience: '2+Years'
 }
+
+// const InfinteScroll = lazy(()=> import('./components/Day11InfinteScrolling'))  
 
 function App() {
 
@@ -81,6 +86,10 @@ function App() {
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-12  (Q.  Build a Modal Component that Opens and Closes When a Button is Clicked, and Also Supports External Closing via Clicks Outside.)</Typography>
         <Day12Modal />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-13  (Q.  Implement Lazy Loading for Images in React)</Typography>
+        <Day13LazyLoading />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
