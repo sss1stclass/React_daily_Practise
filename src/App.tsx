@@ -17,6 +17,7 @@ import Day11InfinteScrolling from './components/Day11InfinteScrolling';
 import Day12Modal from './components/Day12Modal';
 import { InfiniteApiProvider } from './components/context/InfiniteApiContext';
 import Day13LazyLoading from './components/Day13LazyLoading';
+import Day14Accordian from './components/Day14Accordian';
 // import { lazy, Suspense } from 'react';
 
 
@@ -90,6 +91,10 @@ function App() {
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-13  (Q.  Implement Lazy Loading for Images in React)</Typography>
         <Day13LazyLoading />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-14  (Q.  Implement Accordian with scratch)</Typography>
+        <Day14Accordian />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
