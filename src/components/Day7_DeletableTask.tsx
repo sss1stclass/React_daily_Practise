@@ -21,7 +21,7 @@ const Day7_DeletableTask = () => {
         setData(filterData);
     }
 
-    const handleChange =async (event:any)=>{
+    const handleChange = async (event: any) => {
         await setTask(event?.target.value);
     }
 
@@ -46,8 +46,8 @@ const Day7_DeletableTask = () => {
                     })
                 }
             </Box>
-            <TextField variant="outlined" label='Task Name' placeholder="Enter your Task Name" name = 'taskName' value={task} onChange={handleChange} sx={{marginBottom:2}}/>
-            <Button onClick={addTask} variant="contained" color="success">
+            <TextField variant="outlined" label='Task Name' placeholder="Enter your Task Name" name='taskName' value={task} onChange={handleChange} sx={{ marginBottom: 2 }} />
+            <Button onClick={addTask} variant="contained" color="success" disabled={task.length < 3}>
                 Add Task
             </Button>
         </Box>

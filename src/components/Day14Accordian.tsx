@@ -45,22 +45,22 @@ const Day14Accordian = () => {
       {
         showData.map((item: any) => {
           return (
-            <Paper key={item.id} sx={{ display: 'flex', width: '100%', flexDirection: 'column', padding: 1, marginBottom: 1, transition: 'ease-in-out' }}>
+            <Paper key={item.id} sx={{ display: 'flex', width: '100%', flexDirection: 'column', padding: 1, marginBottom: 1, transition: 'ease-in-out 2s' }}>
               <Box sx={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Typography fontWeight={600}>{item?.Name}</Typography>
                 <IconButton onClick={() => handleShow(item.id)}>
                   <KeyboardArrowDownIcon sx={{ fontWeight: '600', color: 'black' }} />
                 </IconButton>
               </Box>
-              <Box sx={{ transition: 'ease-in-out' }}>
-                {
-                  item.show && (
-                    <Box width='100%'>
-                      {item.text}
-                    </Box>
-                  )
-                }
-              </Box>
+              <Box
+              sx={{
+                maxHeight: item.show ? '1000px' : '0', // Dynamically set max height
+                overflow: 'hidden', // Hide the content when collapsed
+                transition: 'max-height 0.5s ease-out', // Smooth transition for content reveal
+              }}
+            >
+              {item.show && <Box width="100">{item.text}</Box>}
+            </Box>
             </Paper>
 
           )
