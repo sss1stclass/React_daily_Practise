@@ -18,6 +18,7 @@ import Day12Modal from './components/Day12Modal';
 import { InfiniteApiProvider } from './components/context/InfiniteApiContext';
 import Day13LazyLoading from './components/Day13LazyLoading';
 import Day14Accordian from './components/Day14Accordian';
+import Day15UseMemoUseCallback from './components/Day15UseMemoUseCallback';
 // import { lazy, Suspense } from 'react';
 
 
@@ -95,6 +96,10 @@ function App() {
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-14  (Q.  Implement Accordian with scratch)</Typography>
         <Day14Accordian />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-14  (Q. Understanding useMemo and useCallBack Hook)</Typography>
+        <Day15UseMemoUseCallback />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
