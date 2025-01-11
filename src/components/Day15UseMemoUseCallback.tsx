@@ -16,7 +16,7 @@ const Day15UseMemoUseCallback = () => {
   console.log(handleUseMemo)
 
   return (
-    <Box display='flex' flexDirection='column' alignItems='center' justifyContent='center' p={3} columnGap={2}>
+    <Box display='flex' flexDirection='column' alignItems='center' justifyContent='center' p={3}>
          <Typography>{counter}</Typography>
          <Button variant="contained" onClick={()=>setCounter(counter+1)}>Inc+</Button>
          <TextField label='input' variant="outlined" value={input} onChange={(e:any)=> setInput(e.target.value)}/>
