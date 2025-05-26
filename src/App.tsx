@@ -21,6 +21,7 @@ import Day14Accordian from './components/Day14Accordian';
 import Day15UseMemoUseCallback from './components/Day15UseMemoUseCallback';
 import LikeButton from './components/LikeButton';
 import GuessTheNumber from './components/GuessTheNumber';
+import Debounce from './components/Debounce';
 // import { lazy, Suspense } from 'react';
 
 
@@ -110,6 +111,10 @@ function App() {
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.Guess the number game to guess the number in how many attempt.)</Typography>
         <GuessTheNumber />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-  (Q.Implemented Debouncing with scratch.)</Typography>
+        <Debounce />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
