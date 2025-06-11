@@ -22,6 +22,7 @@ import Day15UseMemoUseCallback from './components/Day15UseMemoUseCallback';
 import LikeButton from './components/LikeButton';
 import GuessTheNumber from './components/GuessTheNumber';
 import Debounce from './components/Debounce';
+import StopWatch from './components/StopWatch';
 // import { lazy, Suspense } from 'react';
 
 
@@ -115,6 +116,10 @@ function App() {
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.Implemented Debouncing with scratch.)</Typography>
         <Debounce />
+      </Box>
+      <Box mb={2} sx={{ border: '2px solid black' }}>
+        <Typography mb={1} variant='body1'>Day-  (Q. Create a stopWatch with reset)</Typography>
+        <StopWatch />
       </Box>
       <Box mb={2} sx={{ border: '2px solid black' }}>
         <Typography mb={1} variant='body1'>Day-  (Q.  React question for selecting all the checkbox with one button)</Typography>
